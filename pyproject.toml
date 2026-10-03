@@ -1,0 +1,21 @@
+[project]
+name = "eve-opt"
+version = "0.1.0"
+description = "EvE: steady-state differential evolution with a targeted Adam fallback"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jax",
+    "numpy",
+    "pytest",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
